@@ -53,7 +53,7 @@ void opzMiniIdMgr::SetId(ID id)
 	if(index == 0u) return;
 	if(_binTree[index] >= 1u)
 	{
-		assert(L"이미 할당 된 ID를 또 Set했습니다.");
+//		assert(L"이미 할당 된 ID를 또 Set했습니다.");
 		return;
 	}
 	else
@@ -70,7 +70,7 @@ void opzMiniIdMgr::DeleteId(ID id)
 {
 	ID index = GetTreeIndex(id);
 	if(index == 0u) return;
-	assert(_binTree[id] > 0u && L"아직 할당되지 않은 ID를 삭제하려고 했습니다.");
+//	assert(_binTree[id] > 0u && L"아직 할당되지 않은 ID를 삭제하려고 했습니다.");
 	if(_binTree[id] <= 0u) return;
 	
 	while(index > 0u)

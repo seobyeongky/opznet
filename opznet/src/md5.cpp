@@ -394,7 +394,7 @@ void md5(const std::wstring &data, std::string *hexOutput)
     md5_finish(&state, digest);
 
     for (di = 0; di < 16; ++di)
-		sprintf_s(hex_output + di * 2, hex_output_size - di * 2, "%02x", digest[di]);
+		snprintf(hex_output + di * 2, hex_output_size - di * 2, "%02x", digest[di]);
 
 	*hexOutput = hex_output;
 }

@@ -3,11 +3,16 @@
 #include <string>
 #include <vector>
 
-#if defined(OPZNET_COMMON_DLL)
-#define	OPZNET_COMMON_IMPL	__declspec( dllexport )
+#ifdef _WIN32
+#   if defined(OPZNET_COMMON_DLL)
+#   define	OPZNET_COMMON_IMPL	__declspec( dllexport )
+#   else
+#   define	OPZNET_COMMON_IMPL	__declspec( dllimport )
+#   endif
 #else
-#define	OPZNET_COMMON_IMPL	__declspec( dllimport )
+#  define OPZNET_COMMON_IMPL
 #endif
+
 
 namespace opznet
 {	

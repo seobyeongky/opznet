@@ -19,11 +19,11 @@ public:
 	bool	Peek(T *chunkPtr) const;
 
 	bool	CheckEmpty() const {return _deque.empty(); }
-	UINT	GetSize() const {return _deque.size(); };
+	unsigned int GetSize() const {return _deque.size(); };
 
 private:
 	std::deque<T>	_deque;
-	opzMutex		_mutex;
+    std::mutex		_mutex;
 };
 
 template <typename T>
@@ -41,8 +41,8 @@ opzSafeQueue<T>::~opzSafeQueue()
 template <typename T>
 void opzSafeQueue<T>::Push(const T& chunk)
 {
-	opzLock lock(_mutex);
-	_deque.push_front(chunk);	
+    std::unique_lock<std::mutex> lk(_mutex);
+	_deque.push_front(chunk);
 }
 
 template <typename T>
@@ -52,7 +52,7 @@ bool opzSafeQueue<T>::Pop(T *chunkPtr)
 		return false;
 	else
 	{
-		opzLock lock(_mutex);
+		std::unique_lock<std::mutex> lk(_mutex);
 		_deque.pop_back();
 		return true;
 	}
@@ -61,11 +61,11 @@ bool opzSafeQueue<T>::Pop(T *chunkPtr)
 template <typename T>
 bool opzSafeQueue<T>::Peek(T *chunkPtr) const
 {
-	opzLock lock(const_cast<opzMutex &>(_mutex));
+	std::unique_lock<std::mutex> lk(_mutex);
 
 	if(_deque.empty())
 	{
-		assert(!L"Queue is empty!! PeekÀ» ¸øÇÔ");
+		assert(!L"Queue is empty!! Peek");
 		return false;
 	}
 

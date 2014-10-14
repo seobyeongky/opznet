@@ -75,7 +75,7 @@ opzProfiler::~opzProfiler(void)
 {
 }
 
-void opzProfiler::StoreProfileInHistory( LPWSTR name, double percent )
+void opzProfiler::StoreProfileInHistory(const wchar_t *  name, double percent )
 {
 #ifdef _DEBUG
 	MarkTimeThisTick();
@@ -126,7 +126,7 @@ void opzProfiler::StoreProfileInHistory( LPWSTR name, double percent )
 #endif
 }
 
-void opzProfiler::GetProfileFromHistory(LPWSTR name, double* ave, double* min, double* max )
+void opzProfiler::GetProfileFromHistory(const wchar_t *  name, double* ave, double* min, double* max )
 {
 #ifdef _DEBUG
 	unsigned int i = 0;
@@ -192,13 +192,13 @@ void opzProfiler::ClearTextBuffer()
 	ProfileBuffer.clear();
 }
 
-void opzProfiler::PutTextBuffer(LPWSTR c)
+void opzProfiler::PutTextBuffer(const wchar_t * c)
 {
 	ProfileBuffer += c;
 }
 
 
-void opzProfiler::SampleBegin(LPCWSTR name)
+void opzProfiler::SampleBegin(const wchar_t * name)
 {
 #ifdef _DEBUG
 	unsigned int i = 0;
@@ -230,7 +230,7 @@ void opzProfiler::SampleBegin(LPCWSTR name)
 #endif
 }
 
-void opzProfiler::SampleEnd(LPCWSTR name)
+void opzProfiler::SampleEnd(const wchar_t *  name)
 {
 #ifdef _DEBUG
 	unsigned int i = 0;

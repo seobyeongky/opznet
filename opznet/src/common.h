@@ -4,6 +4,8 @@
 
 #define OPZNET_COMMON_DLL
 
+// WIN32 speicic
+#ifdef _WIN32
 #pragma comment(lib, "ws2_32.lib")
 
 #ifdef _DEBUG
@@ -17,6 +19,7 @@
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <WinSock2.h>
+#endif
 
 #include <SFML/Network.hpp>
 #include <SFML/System.hpp>

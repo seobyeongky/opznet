@@ -10,6 +10,7 @@
 #ifndef opznet_
 #define opznet_
 
+
 /* The classes below are exported */
 #pragma GCC visibility push(default)
 

@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A945C6C19ECB60200FA799C /* opznet.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A945C6B19ECB60200FA799C /* opznet.h */; };
+		2A945C6E19ECB60200FA799C /* opznetPriv.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A945C6D19ECB60200FA799C /* opznetPriv.h */; };
+		2A945C7019ECB60200FA799C /* opznet.cp in Sources */ = {isa = PBXBuildFile; fileRef = 2A945C6F19ECB60200FA799C /* opznet.cp */; };
+		2A945C7A19ECB79100FA799C /* client.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A945C7719ECB79100FA799C /* client.h */; };
+		2A945C7B19ECB79100FA799C /* server.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A945C7819ECB79100FA799C /* server.h */; };
+		2A945C7C19ECB79100FA799C /* shared_structs.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A945C7919ECB79100FA799C /* shared_structs.h */; };
+		2A945C9219ECB7DB00FA799C /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A945C8019ECB7DB00FA799C /* common.h */; };
+		2A945C9319ECB7DB00FA799C /* HeaderDef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A945C8119ECB7DB00FA799C /* HeaderDef.cpp */; };
+		2A945C9419ECB7DB00FA799C /* HeaderDef.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A945C8219ECB7DB00FA799C /* HeaderDef.h */; };
+		2A945C9519ECB7DB00FA799C /* IdMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A945C8319ECB7DB00FA799C /* IdMgr.cpp */; };
+		2A945C9619ECB7DB00FA799C /* IdMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A945C8419ECB7DB00FA799C /* IdMgr.h */; };
+		2A945C9719ECB7DB00FA799C /* IdMiniMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A945C8519ECB7DB00FA799C /* IdMiniMgr.cpp */; };
+		2A945C9819ECB7DB00FA799C /* math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A945C8619ECB7DB00FA799C /* math.cpp */; };
+		2A945C9919ECB7DB00FA799C /* mathHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A945C8719ECB7DB00FA799C /* mathHelper.h */; };
+		2A945C9A19ECB7DB00FA799C /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A945C8819ECB7DB00FA799C /* md5.cpp */; };
+		2A945C9B19ECB7DB00FA799C /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A945C8919ECB7DB00FA799C /* md5.h */; };
+		2A945C9C19ECB7DB00FA799C /* packet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A945C8A19ECB7DB00FA799C /* packet.cpp */; };
+		2A945C9D19ECB7DB00FA799C /* profiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A945C8B19ECB7DB00FA799C /* profiler.cpp */; };
+		2A945C9E19ECB7DB00FA799C /* profiler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A945C8C19ECB7DB00FA799C /* profiler.h */; };
+		2A945C9F19ECB7DB00FA799C /* SafeQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A945C8D19ECB7DB00FA799C /* SafeQueue.h */; };
+		2A945CA019ECB7DB00FA799C /* Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A945C8F19ECB7DB00FA799C /* Thread.cpp */; };
+		2A945CA119ECB7DB00FA799C /* Thread.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A945C9019ECB7DB00FA799C /* Thread.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A945C6819ECB60200FA799C /* libopznet.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libopznet.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A945C6B19ECB60200FA799C /* opznet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = opznet.h; sourceTree = "<group>"; };
+		2A945C6D19ECB60200FA799C /* opznetPriv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = opznetPriv.h; sourceTree = "<group>"; };
+		2A945C6F19ECB60200FA799C /* opznet.cp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = opznet.cp; sourceTree = "<group>"; };
+		2A945C7719ECB79100FA799C /* client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = client.h; path = ../opznet/include/opznet/client.h; sourceTree = "<group>"; };
+		2A945C7819ECB79100FA799C /* server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = server.h; path = ../opznet/include/opznet/server.h; sourceTree = "<group>"; };
+		2A945C7919ECB79100FA799C /* shared_structs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shared_structs.h; path = ../opznet/include/opznet/shared_structs.h; sourceTree = "<group>"; };
+		2A945C7F19ECB7DB00FA799C /* client */ = {isa = PBXFileReference; lastKnownFileType = folder; name = client; path = ../opznet/src/client; sourceTree = "<group>"; };
+		2A945C8019ECB7DB00FA799C /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = ../opznet/src/common.h; sourceTree = "<group>"; };
+		2A945C8119ECB7DB00FA799C /* HeaderDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HeaderDef.cpp; path = ../opznet/src/HeaderDef.cpp; sourceTree = "<group>"; };
+		2A945C8219ECB7DB00FA799C /* HeaderDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderDef.h; path = ../opznet/src/HeaderDef.h; sourceTree = "<group>"; };
+		2A945C8319ECB7DB00FA799C /* IdMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IdMgr.cpp; path = ../opznet/src/IdMgr.cpp; sourceTree = "<group>"; };
+		2A945C8419ECB7DB00FA799C /* IdMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IdMgr.h; path = ../opznet/src/IdMgr.h; sourceTree = "<group>"; };
+		2A945C8519ECB7DB00FA799C /* IdMiniMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IdMiniMgr.cpp; path = ../opznet/src/IdMiniMgr.cpp; sourceTree = "<group>"; };
+		2A945C8619ECB7DB00FA799C /* math.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = math.cpp; path = ../opznet/src/math.cpp; sourceTree = "<group>"; };
+		2A945C8719ECB7DB00FA799C /* mathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mathHelper.h; path = ../opznet/src/mathHelper.h; sourceTree = "<group>"; };
+		2A945C8819ECB7DB00FA799C /* md5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = md5.cpp; path = ../opznet/src/md5.cpp; sourceTree = "<group>"; };
+		2A945C8919ECB7DB00FA799C /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md5.h; path = ../opznet/src/md5.h; sourceTree = "<group>"; };
+		2A945C8A19ECB7DB00FA799C /* packet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = packet.cpp; path = ../opznet/src/packet.cpp; sourceTree = "<group>"; };
+		2A945C8B19ECB7DB00FA799C /* profiler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = profiler.cpp; path = ../opznet/src/profiler.cpp; sourceTree = "<group>"; };
+		2A945C8C19ECB7DB00FA799C /* profiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = profiler.h; path = ../opznet/src/profiler.h; sourceTree = "<group>"; };
+		2A945C8D19ECB7DB00FA799C /* SafeQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SafeQueue.h; path = ../opznet/src/SafeQueue.h; sourceTree = "<group>"; };
+		2A945C8E19ECB7DB00FA799C /* server */ = {isa = PBXFileReference; lastKnownFileType = folder; name = server; path = ../opznet/src/server; sourceTree = "<group>"; };
+		2A945C8F19ECB7DB00FA799C /* Thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Thread.cpp; path = ../opznet/src/Thread.cpp; sourceTree = "<group>"; };
+		2A945C9019ECB7DB00FA799C /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Thread.h; path = ../opznet/src/Thread.h; sourceTree = "<group>"; };
+		2A945CA319ECBB8E00FA799C /* osx */ = {isa = PBXFileReference; lastKnownFileType = folder; name = osx; path = ../opznet/src/osx; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A945C6519ECB60200FA799C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A945C5F19ECB60200FA799C = {
+			isa = PBXGroup;
+			children = (
+				2A945C7D19ECB79D00FA799C /* src */,
+				2A945C7619ECB70000FA799C /* include */,
+				2A945C6A19ECB60200FA799C /* opznet */,
+				2A945C6919ECB60200FA799C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A945C6919ECB60200FA799C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A945C6819ECB60200FA799C /* libopznet.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A945C6A19ECB60200FA799C /* opznet */ = {
+			isa = PBXGroup;
+			children = (
+				2A945C6B19ECB60200FA799C /* opznet.h */,
+				2A945C6D19ECB60200FA799C /* opznetPriv.h */,
+				2A945C6F19ECB60200FA799C /* opznet.cp */,
+			);
+			path = opznet;
+			sourceTree = "<group>";
+		};
+		2A945C7619ECB70000FA799C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2A945C7719ECB79100FA799C /* client.h */,
+				2A945C7819ECB79100FA799C /* server.h */,
+				2A945C7919ECB79100FA799C /* shared_structs.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		2A945C7D19ECB79D00FA799C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2A945CA319ECBB8E00FA799C /* osx */,
+				2A945C7F19ECB7DB00FA799C /* client */,
+				2A945C8019ECB7DB00FA799C /* common.h */,
+				2A945C8119ECB7DB00FA799C /* HeaderDef.cpp */,
+				2A945C8219ECB7DB00FA799C /* HeaderDef.h */,
+				2A945C8319ECB7DB00FA799C /* IdMgr.cpp */,
+				2A945C8419ECB7DB00FA799C /* IdMgr.h */,
+				2A945C8519ECB7DB00FA799C /* IdMiniMgr.cpp */,
+				2A945C8619ECB7DB00FA799C /* math.cpp */,
+				2A945C8719ECB7DB00FA799C /* mathHelper.h */,
+				2A945C8819ECB7DB00FA799C /* md5.cpp */,
+				2A945C8919ECB7DB00FA799C /* md5.h */,
+				2A945C8A19ECB7DB00FA799C /* packet.cpp */,
+				2A945C8B19ECB7DB00FA799C /* profiler.cpp */,
+				2A945C8C19ECB7DB00FA799C /* profiler.h */,
+				2A945C8D19ECB7DB00FA799C /* SafeQueue.h */,
+				2A945C8E19ECB7DB00FA799C /* server */,
+				2A945C8F19ECB7DB00FA799C /* Thread.cpp */,
+				2A945C9019ECB7DB00FA799C /* Thread.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2A945C6619ECB60200FA799C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A945C9619ECB7DB00FA799C /* IdMgr.h in Headers */,
+				2A945C9E19ECB7DB00FA799C /* profiler.h in Headers */,
+				2A945C9B19ECB7DB00FA799C /* md5.h in Headers */,
+				2A945C7A19ECB79100FA799C /* client.h in Headers */,
+				2A945C9219ECB7DB00FA799C /* common.h in Headers */,
+				2A945C9F19ECB7DB00FA799C /* SafeQueue.h in Headers */,
+				2A945C7B19ECB79100FA799C /* server.h in Headers */,
+				2A945C7C19ECB79100FA799C /* shared_structs.h in Headers */,
+				2A945C6C19ECB60200FA799C /* opznet.h in Headers */,
+				2A945C6E19ECB60200FA799C /* opznetPriv.h in Headers */,
+				2A945C9919ECB7DB00FA799C /* mathHelper.h in Headers */,
+				2A945CA119ECB7DB00FA799C /* Thread.h in Headers */,
+				2A945C9419ECB7DB00FA799C /* HeaderDef.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2A945C6719ECB60200FA799C /* opznet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A945C7319ECB60200FA799C /* Build configuration list for PBXNativeTarget "opznet" */;
+			buildPhases = (
+				2A945C6419ECB60200FA799C /* Sources */,
+				2A945C6519ECB60200FA799C /* Frameworks */,
+				2A945C6619ECB60200FA799C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = opznet;
+			productName = opznet;
+			productReference = 2A945C6819ECB60200FA799C /* libopznet.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A945C6019ECB60200FA799C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = ooparts;
+				TargetAttributes = {
+					2A945C6719ECB60200FA799C = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 2A945C6319ECB60200FA799C /* Build configuration list for PBXProject "opznet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2A945C5F19ECB60200FA799C;
+			productRefGroup = 2A945C6919ECB60200FA799C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A945C6719ECB60200FA799C /* opznet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A945C6419ECB60200FA799C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A945C7019ECB60200FA799C /* opznet.cp in Sources */,
+				2A945C9519ECB7DB00FA799C /* IdMgr.cpp in Sources */,
+				2A945C9719ECB7DB00FA799C /* IdMiniMgr.cpp in Sources */,
+				2A945CA019ECB7DB00FA799C /* Thread.cpp in Sources */,
+				2A945C9D19ECB7DB00FA799C /* profiler.cpp in Sources */,
+				2A945C9C19ECB7DB00FA799C /* packet.cpp in Sources */,
+				2A945C9319ECB7DB00FA799C /* HeaderDef.cpp in Sources */,
+				2A945C9A19ECB7DB00FA799C /* md5.cpp in Sources */,
+				2A945C9819ECB7DB00FA799C /* math.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2A945C7119ECB60200FA799C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2A945C7219ECB60200FA799C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2A945C7419ECB60200FA799C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lsfml-network",
+					"-lsfml-system",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2A945C7519ECB60200FA799C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lsfml-network",
+					"-lsfml-system",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A945C6319ECB60200FA799C /* Build configuration list for PBXProject "opznet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A945C7119ECB60200FA799C /* Debug */,
+				2A945C7219ECB60200FA799C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A945C7319ECB60200FA799C /* Build configuration list for PBXNativeTarget "opznet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A945C7419ECB60200FA799C /* Debug */,
+				2A945C7519ECB60200FA799C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A945C6019ECB60200FA799C /* Project object */;
+}

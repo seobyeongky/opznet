@@ -1,6 +1,6 @@
 #include "mathHelper.h"
 
-//#include <cmath>
+#include <cmath>
 #include <limits>
 #include <cassert>
 
@@ -19,7 +19,7 @@ unsigned int Pow2(unsigned x)
 	67108864U, 134217728U, 268435456U, 536870912U, 1073741824U, 2147483648U};
 	if(x > 31U)
 	{
-		assert(!L"Pow2의 인자값이 너무 큽니다!");
+//		assert(!L"Pow2의 인자값이 너무 큽니다!");
 		return 0U;
 	}
 	else
