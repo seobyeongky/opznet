@@ -1,0 +1,13 @@
+﻿빌드 시작: 2013-05-17 오후 8:07:26
+     1>2 노드의 "D:\C++ Projects\opznet\opznet\opznet-server\opznet-server.vcxproj" 프로젝트(Build 대상)입니다.
+     1>Link:
+         opznet-server.vcxproj -> D:\C++ Projects\opznet\\opznet\lib\opznet-server-d.dll
+       PostBuildEvent:
+         copy ..\lib\opznet-server-d.dll ..\..\example\Debug\
+         :VCEnd
+                 1개 파일이 복사되었습니다.
+     1>"D:\C++ Projects\opznet\opznet\opznet-server\opznet-server.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:00.21

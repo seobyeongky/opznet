@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "opznet-client", "opznet\opznet-client\opznet-client.vcxproj", "{D572F7BD-AAE5-4F1D-8C41-B7A046429DF0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "opznet-server", "opznet\opznet-server\opznet-server.vcxproj", "{B2EE74D2-FE50-4DFA-AA25-EC6A948E61B0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "client_demo", "example\client_demo\client_demo.vcxproj", "{BC68B5FE-491D-4C53-9738-7A21F83B83F4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D572F7BD-AAE5-4F1D-8C41-B7A046429DF0} = {D572F7BD-AAE5-4F1D-8C41-B7A046429DF0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "server_demo", "example\server_demo\server_demo.vcxproj", "{10CE10C0-679A-4B07-8C81-62A2C1C5F540}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B2EE74D2-FE50-4DFA-AA25-EC6A948E61B0} = {B2EE74D2-FE50-4DFA-AA25-EC6A948E61B0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stress_inductor", "example\stress_inductor\stress_inductor.vcxproj", "{35B4E8A9-F6F3-435B-A8E0-269ED4BC0692}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D572F7BD-AAE5-4F1D-8C41-B7A046429DF0} = {D572F7BD-AAE5-4F1D-8C41-B7A046429DF0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D572F7BD-AAE5-4F1D-8C41-B7A046429DF0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D572F7BD-AAE5-4F1D-8C41-B7A046429DF0}.Debug|Win32.Build.0 = Debug|Win32
+		{D572F7BD-AAE5-4F1D-8C41-B7A046429DF0}.Release|Win32.ActiveCfg = Release|Win32
+		{D572F7BD-AAE5-4F1D-8C41-B7A046429DF0}.Release|Win32.Build.0 = Release|Win32
+		{B2EE74D2-FE50-4DFA-AA25-EC6A948E61B0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B2EE74D2-FE50-4DFA-AA25-EC6A948E61B0}.Debug|Win32.Build.0 = Debug|Win32
+		{B2EE74D2-FE50-4DFA-AA25-EC6A948E61B0}.Release|Win32.ActiveCfg = Release|Win32
+		{B2EE74D2-FE50-4DFA-AA25-EC6A948E61B0}.Release|Win32.Build.0 = Release|Win32
+		{BC68B5FE-491D-4C53-9738-7A21F83B83F4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BC68B5FE-491D-4C53-9738-7A21F83B83F4}.Debug|Win32.Build.0 = Debug|Win32
+		{BC68B5FE-491D-4C53-9738-7A21F83B83F4}.Release|Win32.ActiveCfg = Release|Win32
+		{BC68B5FE-491D-4C53-9738-7A21F83B83F4}.Release|Win32.Build.0 = Release|Win32
+		{10CE10C0-679A-4B07-8C81-62A2C1C5F540}.Debug|Win32.ActiveCfg = Debug|Win32
+		{10CE10C0-679A-4B07-8C81-62A2C1C5F540}.Debug|Win32.Build.0 = Debug|Win32
+		{10CE10C0-679A-4B07-8C81-62A2C1C5F540}.Release|Win32.ActiveCfg = Release|Win32
+		{10CE10C0-679A-4B07-8C81-62A2C1C5F540}.Release|Win32.Build.0 = Release|Win32
+		{35B4E8A9-F6F3-435B-A8E0-269ED4BC0692}.Debug|Win32.ActiveCfg = Debug|Win32
+		{35B4E8A9-F6F3-435B-A8E0-269ED4BC0692}.Debug|Win32.Build.0 = Debug|Win32
+		{35B4E8A9-F6F3-435B-A8E0-269ED4BC0692}.Release|Win32.ActiveCfg = Release|Win32
+		{35B4E8A9-F6F3-435B-A8E0-269ED4BC0692}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
